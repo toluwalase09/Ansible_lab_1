@@ -1,0 +1,9 @@
+---
+- name: Web server using apache
+  hosts: all
+  user: ubuntu
+  become: true
+  become_method: sudo
+  become_user: root
+  roles:
+    - role
